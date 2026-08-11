@@ -187,7 +187,7 @@
   #set ($discard = $xwiki.ssx.use('FileManagerCode.LiveTableFilter'))
   #set ($discard = $xwiki.ssx.use('FileManagerCode.DriveSheet'))
   #set ($discard = $xwiki.jsx.use('FileManagerCode.DriveSheet'))
-  &lt;div id="drive" ng-controller="DriveCtrl" class="no-bootstrap"&gt;
+  &lt;div id="drive" ng-controller="DriveCtrl" class="no-bootstrap" ng-jq&gt;
     &lt;table class="pane-splitter"&gt;
       &lt;tr&gt;
         &lt;td class="pane left"&gt;
@@ -406,7 +406,7 @@
 #end
 
 #macro (downloads)
-  &lt;div ng-show="drive.viewer == 'downloads'" ng-controller="DownloadCtrl"&gt;
+  &lt;div ng-show="drive.viewer == 'downloads'" ng-controller="DownloadCtrl" ng-jq&gt;
     &lt;div class="btn-toolbar" role="toolbar"&gt;
       &lt;div class="btn-group"&gt;
         &lt;button type="button" class="btn btn-default" ng-click="drive.viewer = 'files'"
